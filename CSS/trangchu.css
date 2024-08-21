@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.banner{
+    font-size: 2em;
+    height: 150px;
+    background-image: url(Images/Logo.png);
+    background-repeat: repeat-x;
+    line-height: 150px;
+    text-align: center;
+    color: rgb(17, 36, 165);
+    text-shadow:6px 6px 2px rgb(120, 135, 213) ;
+}
+.nav{
+    text-align: center;
+    height: 30px;
+    background-color: darkcyan;
+    line-height: 30px;
+}
+.container{
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    width: 15%;
+    background-color: rgb(163, 238, 241);
+}
+.right{
+    width: 15%;
+    background-color:rgb(163, 238, 241);
+    display: flex;
+    flex-direction: column;
+}
+.right div{
+    font-size: 10px;
+    background-image: url(Images/CanTho1.webp);
+    background-color: beige;
+    width: 150px;
+    height: 100px;
+    border: 3px solid gray;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius:20px 20px;/*Đường cong của đường viền*/
+    text-align: center;
+    line-height: 70px;
+    box-shadow: 5px 5px gray;
+}
+.content{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: scroll;
+
+}
+.content div{
+    display: flex;
+    flex-direction: row;
+    height: 45%;
+    margin-bottom: 20px;
+    text-align: justify;/*căn điều chữ*/
+}
+.content>div>div{
+    width: 50%;
+    border: 3px solid grey;
+    padding: 10px;
+    height:90% ;
+    margin: 10px;
+    overflow: scroll;
+    font-size: 1.25em;
+}
+.footer{
+    height: 50px;
+    background-color: #0000ff;
+    text-align: center;
+    color: yellow;
+    line-height: 50px;
+}
+
+.menu li{
+    background-color: darkcyan;
+    display: inline-table;
+    width: 150px;
+    position: relative;
+}
+.menu a{
+    text-decoration: none;
+    display:block;
+    color: white;
+}
+.menu li .submeru{
+    display: none;
+    position: absolute;
+}
+.menu li:hover .submeru{
+    display: block;
+}
+.menu a:hover{
+    background-color: cornflowerblue;
+}
+.menu li:hover{
+    background-color: cornflowerblue;
+}
+.inleft li{
+    background-color: #0000ff;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
+.innleft li{
+    background-color: rgb(163, 238, 241);
+    color: black;
+    text-align: left;
+    text-indent: 15px;
+}
